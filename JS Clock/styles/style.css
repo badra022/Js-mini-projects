@@ -120,6 +120,35 @@ div img {
     z-index: 3;
 }
 
+.party-button {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(164, 164, 219);
+    font-size: 20px;
+    border-width: 3px;
+    border-color: black;
+    margin: 0 0 50px 0;
+}
+
+.party-button:hover {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(85, 85, 209);
+    font-size: 20px;
+    border-width: 3px;
+    border-color: black;
+    margin: 0 0 50px 0;
+}
+
+.party-button:active {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(221, 65, 26);
+    font-size: 20px;
+    border-width: 3px;
+    border-color: black;
+    margin: 0 0 50px 0;
+}
 
 @-webkit-keyframes neon2 {
     from {

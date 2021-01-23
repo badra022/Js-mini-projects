@@ -1,5 +1,5 @@
-setInterval( clockUpdate , 1000 )
-
+setInterval( clockUpdate , 1000 );
+setInterval( clockNumbersUpdate , 1000);
 
 function clockUpdate() {
     let date = new Date();
@@ -15,4 +15,18 @@ function updatehand(selector, rotation) {
     document.querySelector(selector).style.setProperty('--rotation', rotation * 360);
 }
 
+function clockNumbersUpdate() {
+    let date = new Date();
+    var time;
+    if (date.getHours() > 12)
+    {
+        time = (date.getHours() % 12) + ':' + date.getMinutes() + ':' + date.getSeconds() + "PM";
+    }
+    else{
+        time = (date.getHours() % 12) + ':' + date.getMinutes() + ':' + date.getSeconds() + "AM";
+    }
+    document.getElementById("current-time").innerHTML = time;
+}
+
 clockUpdate();
+clockNumbersUpdate();
