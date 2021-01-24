@@ -50,6 +50,13 @@ blockquote {
 blockquote:before { content: '"'; }
 blockquote:after { content: '"'; }
 
+#note {
+    font-size: xx-large; 
+    border-color: black; 
+    border-width: 3px;
+    border-style: solid;
+}
+
 .clock {
     background-color: rgb(127, 127, 179, 0.2);
     /* opacity: 80%; */
