@@ -8,3 +8,5 @@ this is a my first project in this career(web development), it's a simple applic
 * css 
 * Javascript
 * bootstrap
+
+## Original src and copy rights: https://codepen.io/codifiedconcepts/pen/bwgxRq?editors=0010
