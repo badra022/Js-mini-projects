@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+body {
+    align-items: center;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.363);
+    font-family: 'Potta One', cursive;
+    position: relative;
+    margin: 0;
+}
+
+.button {
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+    border: 1px honeydew;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Potta One', cursive;
+}
+
+.button:hover {
+    border: 1px rgb(201, 207, 201);
+    opacity: 60%;
+}
+
+.button:active {
+    border: 1px rgb(126, 128, 126);
+    background-color: hotpink;
+}
+
+.button:focus {
+    border: 1px rgb(255, 255, 255);
+    background-color: rgb(190, 190, 190);
+}
+
+.select-bar {
+    width: 300px;
+    height: 40;
+    background-color: ivory;
+    margin: 10px;
+}
+
+select option {
+    margin: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  }
+
+*:focus {
+    outline: 0;
+}
+
+
+.custom-select-wrapper {
+    position: relative;
+    user-select: none;
+    width: 20%;
+    justify-content: center;
+}
+
+.flex-box-ch-04, .flex-box-ch-01, .flex-box-ch-02, .flex-box-ch-03 {
+    display: flex;
+    position: relative;
+    /* background-color: blanchedalmond; */
+    width: 60%;
+    padding: 5px;
+    margin: 3px;
+    justify-content: space-around;
+    justify-self: center;
+    flex-wrap: wrap;
+    left: 20%;
+    border: 1px solid black;
+}
+
+.output-text {
+    display: relative;
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+}
+
+.cats img {
+    width: 30%;
+    height: auto;
+    margin: 3px;
+    border: 2px solid black;
+    box-shadow: black;
+}
+
+.custom-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-width: 0 2px 0 2px;
+    border-style: solid;
+    border-color: #394a6d;
+    border-radius: 5px;
+}
+.custom-select__trigger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    font-size: 20px;
+    font-weight: 250;
+    color: #3b3b3b;
+    height: 45px;
+    line-height: 45px;
+    background:  #fff ;
+    cursor: pointer;
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+    border-color: #394a6d;
+}
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 2px solid #394a6d;
+    border-top: 0;
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 20;
+}
+.custom-select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0 22px 0 22px;
+    font-size: 22px;
+    font-weight: 250;
+    color: #3b3b3b;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.custom-option:hover {
+    cursor: pointer;
+    background-color: #b2b2b2;
+}
+.custom-option.selected {
+    color: #ffffff;
+    background-color: #305c91;
+}
+
+
+footer {
+    background-color: black;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}

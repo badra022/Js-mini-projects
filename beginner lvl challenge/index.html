@@ -2,7 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Challenges</title>
+    <!-- <link rel="stylesheet" href="static/styles/reset.css"> -->
+    <link rel="stylesheet" href="static/styles/styles.css">
 </head>
 <body>
     <div class="container-challenge">
@@ -12,7 +14,7 @@
             <button class="button button2">Clear</button>
         </div>
         <div class="flex-box-ch-01">
-            <h1 class="output-text"></h1>
+            <div class="output-text"></div>
         </div>
     </div>
 
@@ -21,7 +23,7 @@
         <div class="flex-box-ch-02">
             <button class="button button3">Generate Cat</button>
         </div>
-        <div class="flex-box-ch-02"></div>
+        <div class="flex-box-ch-02 cats"></div>
     </div>
 
     <div class="container-challenge">
@@ -34,13 +36,19 @@
     <div class="container-challenge">
         <h1 class="challenge-title">Challenge 04: Control the color of all Buttons</h1>
         <div class="flex-box-ch-04">
-            <label class="choose-label">Choose the Color</label>
-            <select class="select-bar">
-                <option selected>Default</option>
-                <option selected>Red</option>
-                <option selected>Orange</option>
-                <option selected>Blue</option>
-            </select>
+            <div class="custom-select-wrapper">
+                <div class="custom-select">
+                    <div class="custom-select__trigger"><span>default</span>
+                        <!-- <div class="arrow"></div> -->
+                    </div>
+                    <div class="custom-options">
+                        <span class="custom-option selected" data-value="default">default</span>
+                        <span class="custom-option" data-value="red">red</span>
+                        <span class="custom-option" data-value="blue">blue</span>
+                        <span class="custom-option" data-value="yellow">yellow</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="flex-box-ch-04">
             <button class="button button4">Retry</button>
@@ -50,5 +58,9 @@
         </div>
     </div>
 
+    <footer> <cite>copyRights, Clever programmer</cite></footer>
+
+    <script src="static/javascript/dropDownScript.js"></script>
+    <script src="static/javascript/script.js"></script>
 </body>
 </html>
