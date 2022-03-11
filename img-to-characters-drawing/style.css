@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Courier';
+    font-size: 10pt;
+    line-height: 8pt;
+    color: #FFF
+}
+
+canvas {
+    display: block;
+}
